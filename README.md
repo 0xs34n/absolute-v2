@@ -5,5 +5,5 @@ A dashboard for absolute organization to manage their multi-level marketing sale
 
 ## Usage
 
-* Development server `npm run start` connect to `localhost:8082`
+* `npm run start` for development server and connect to `localhost:8082`
 * `npm run build` for production build
