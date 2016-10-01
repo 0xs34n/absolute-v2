@@ -1,0 +1,19 @@
+{
+  "name": "absolute-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanseany/absolute-v2.git"
+  },
+  "author": "Sean Han, Jonathan Koh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seanseany/absolute-v2/issues"
+  },
+  "homepage": "https://github.com/seanseany/absolute-v2#readme"
+}
