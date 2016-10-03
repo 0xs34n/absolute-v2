@@ -58,7 +58,8 @@ const common = {
      },
      plugins: [
      	new HtmlWebpackPlugin({
-     		title: 'absolute'
+     		title: 'absolute',
+            template: './template.html'
      	}),
      	new ExtractTextPlugin('[name].[chunkhash].css')
      ]

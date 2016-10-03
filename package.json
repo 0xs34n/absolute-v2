@@ -33,6 +33,12 @@
     "webpack-validator": "^2.2.8"
   },
   "dependencies": {
-    "react": "^15.3.2"
+    "firebase": "^3.4.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "redux": "^3.6.0",
+    "redux-react-firebase": "^2.2.4"
   }
 }
