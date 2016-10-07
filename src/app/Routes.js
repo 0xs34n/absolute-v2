@@ -1,11 +1,11 @@
 import React from 'react';
 import { Router, Route, browserHistory } from 'react-router';
-import Main from './Main';
+import App from './App';
 
 function Routes(props) {
 	return (
 		<Router history={browserHistory}>
-			<Route path="/" component={Main} />
+			<Route path="/" component={App} />
 		</Router>
 	);
 };

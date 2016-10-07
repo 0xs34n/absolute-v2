@@ -10,7 +10,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const PurifyCSSPlugin = require('purifycss-webpack-plugin');
 
 const PATHS = {
-	app: path.join(__dirname, 'app'),
+	app: path.join(__dirname, 'src'),
 	build: path.join(__dirname, 'build')
 }
 
@@ -120,6 +120,24 @@ switch(process.env.npm_lifecycle_event) {
 			]
 		});
 		break;
+        case 'test':
+            config = merge(common, {
+                entry: './test.js',
+                output: {
+                    path: PATHS.build,
+                    filename: '[name].js',
+                },
+                externals: {
+                    'react/addons': true,
+                    'react/lib/ExecutionEnvironment': true,
+                    'react/lib/ReactContext': true
+                },
+                devServer: {
+                    host: "localhost",
+                    port: 8083
+                }
+            });
+            break;
 	default:
 		config = merge(common, {});
 }
