@@ -26,7 +26,8 @@ export default function authReducer(state = InitialAuthState, {payload, type}) {
             });
         case "SIGN_IN_ERROR":
             return Object.assign({}, state, {
-                error: payload
+                error: payload,
+                inProgress: false
             });
         case "SIGNING_OUT":
             return Object.assign({}, state, {
@@ -36,7 +37,8 @@ export default function authReducer(state = InitialAuthState, {payload, type}) {
             return InitialAuthState;
         case "SIGN_OUT_ERROR":
             return Object.assign({}, state, {
-                error: payload
+                error: payload,
+                inProgress: false
             })
         default:
             return state;
